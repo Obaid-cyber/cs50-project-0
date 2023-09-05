@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Style for the navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style for the search containers */
+.search-container, .advanced-search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style for input fields */
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+/* Style for submit buttons */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for "I'm Feeling Lucky" link */
+a#feeling-lucky {
+    text-decoration: none;
+    color: #4285f4;
+    margin-left: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Google Search</a></li>
+            <li><a href="images.html">Google Image Search</a></li>
+            <li><a href="advanced.html">Google Advanced Search</a></li>
+        </ul>
+    </nav>
+    <div class="advanced-search-container">
+        <form action="https://www.google.com/search" method="GET">
+            <div>
+                <label for="all-words">Find pages with…</label>
+                <input type="text" id="all-words" name="as_q" placeholder="all these words">
+            </div>
+            <div>
+                <label for="exact-phrase">Find pages with…</label>
+                <input type="text" id="exact-phrase" name="as_epq" placeholder="this exact word or phrase">
+            </div>
+            <div>
+                <label for="any-words">Find pages with…</label>
+                <input type="text" id="any-words" name="as_oq" placeholder="any of these words">
+            </div>
+            <div>
+                <label for="exclude-words">Find pages with…</label>
+                <input type="text" id="exclude-words" name="as_eq" placeholder="none of these words">
+            </div>
+            <input type="submit" value="Google Search">
+        </form>
+    </div>
+        
+</body>
+</html>
